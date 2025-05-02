@@ -1,0 +1,68 @@
+[
+    {
+        "id": "a72f8a7b8bf0d24b",
+        "type": "tab",
+        "label": "HTTP requests",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8254490f62f519fb",
+        "type": "http in",
+        "z": "a72f8a7b8bf0d24b",
+        "name": "",
+        "url": "/ai-model/propability",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "024c8bb9db576e69"
+            ]
+        ]
+    },
+    {
+        "id": "024c8bb9db576e69",
+        "type": "function",
+        "z": "a72f8a7b8bf0d24b",
+        "name": "function 1",
+        "func": "msg.payload = {\n    propability: 0.44,\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 80,
+        "wires": [
+            [
+                "a0fe27c5e86f5d41"
+            ]
+        ]
+    },
+    {
+        "id": "a0fe27c5e86f5d41",
+        "type": "http response",
+        "z": "a72f8a7b8bf0d24b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "69ab2b9ca42efc74",
+        "type": "comment",
+        "z": "a72f8a7b8bf0d24b",
+        "name": "Result propability for a single request",
+        "info": "",
+        "x": 180,
+        "y": 40,
+        "wires": []
+    }
+]

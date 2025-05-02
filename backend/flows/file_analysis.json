@@ -1,0 +1,20 @@
+[
+    {
+        "id": "dea15e82a75ab4c9",
+        "type": "tab",
+        "label": "FIle analysis",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f1f14310df0eab40",
+        "type": "comment",
+        "z": "dea15e82a75ab4c9",
+        "name": "",
+        "info": "",
+        "x": 100,
+        "y": 40,
+        "wires": []
+    }
+]
