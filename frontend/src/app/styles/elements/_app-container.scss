@@ -1,0 +1,10 @@
+@use './../../styles/settings/variables' as *;
+
+.e-app-container {
+  margin: 0 auto;
+  width: $app__width--portrait;
+  
+  @media screen and (min-width: 769px) {
+    width: $app__width--landscape;
+  }
+}

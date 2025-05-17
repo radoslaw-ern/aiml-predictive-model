@@ -1,0 +1,7 @@
+@use './styles/settings/variables' as *;
+
+.e-app {
+  &__main {
+    padding: 1rem 0;
+  }
+}

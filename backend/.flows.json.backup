@@ -628,8 +628,8 @@
         "id": "331e175952eeef1b",
         "type": "function",
         "z": "a72f8a7b8bf0d24b",
-        "name": "function",
-        "func": "msg.payload = msg.payload.toString()\n\nreturn msg;",
+        "name": "function 3",
+        "func": "msg.payload = msg.payload.toString()\n// msg.payload = JSON.parse(msg.payload.toString())\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -640,7 +640,7 @@
         "y": 80,
         "wires": [
             [
-                "a0fe27c5e86f5d41"
+                "b77b50985fe6afbc"
             ]
         ]
     },
@@ -655,13 +655,19 @@
         "wires": []
     },
     {
-        "id": "153ee4a0d1defbb2",
-        "type": "comment",
+        "id": "b77b50985fe6afbc",
+        "type": "debug",
         "z": "a72f8a7b8bf0d24b",
-        "name": "Send response",
-        "info": "",
-        "x": 1080,
-        "y": 40,
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 60,
         "wires": []
     },
     {

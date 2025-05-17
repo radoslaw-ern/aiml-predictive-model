@@ -1,0 +1,28 @@
+@use './../../styles/settings/variables' as *;
+
+@keyframes spin {
+  from {
+    transform: rotate(0.5deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.v-upload-spreadsheet {
+  &__loader {
+    width: 8rem;
+    height: 8rem; 
+  }
+
+  &__loader-icon {
+    display: block;
+    font-size: 4rem;
+    color: $app__text;
+    animation: spin 1s infinite linear;
+  }
+
+  &__diagnose-prediction {
+    font-size: 4rem;
+  }
+}

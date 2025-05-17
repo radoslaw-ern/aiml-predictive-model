@@ -1,0 +1,19 @@
+.c-app-button {
+  &__button {
+    width: 12rem;
+    height: 8rem;
+
+    @media screen and (min-width: 769px) {
+      width: 15rem;
+    }
+  }
+
+  &__icon {
+    font-size: 4rem;
+  }
+
+  &__input {
+    width: 0 !important;
+    height: 0 !important;
+  }
+}

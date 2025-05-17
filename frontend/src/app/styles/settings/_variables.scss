@@ -1,0 +1,19 @@
+// Colors definition
+$color-1: #222;
+$color-2: #eee;
+$color-3: #16c2d5;
+$color-4: #262a4d;
+
+// App
+$app__width--portrait: 32rem;
+$app__width--landscape: 40rem;
+$app__text: $color-1;
+$app__bg: $color-2;
+
+// App header
+$app-header__upper-height: 2rem;
+$app-header__lower-height: 3rem;
+$app-header__height: $app-header__upper-height + $app-header__lower-height;
+$app-header__text--light: $color-2;
+$app-header__bg: $color-3;
+$app-header__bg--dark: $color-4;

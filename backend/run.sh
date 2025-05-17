@@ -1,0 +1,1 @@
+npx http-server -p 2882 & node-red --userDir ./ --port 2881

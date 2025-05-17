@@ -1,0 +1,32 @@
+<section class="v-upload-spreadsheet">
+  <p *ngIf="uploadStatus !== 2" class="mb-4">Please select a .csv spreadsheet file from your device. Remember that columns must match the predefined schema. Use the "|" character as separator.</p>
+  <p *ngIf="uploadStatus === 2" class="mb-4">The probability of the cancer to be malignant is:</p>
+
+  <div class="d-flex justify-content-center">
+    <div class="input-group input-group-lg w-auto">
+
+      <div *ngIf="uploadStatus === 0">
+        <label class="c-app-button__button btn btn-primary p-0 d-flex justify-content-center align-items-center border-0 rounded-4" for="uploadSpreadsheetButton">
+          <i class="c-app-button__icon bi bi-file-earmark-arrow-up-fill"></i>
+        </label>
+        <input type="file" accept=".csv" (change)="onFileSelected($event)" class="d-none" id="uploadSpreadsheetButton">
+      </div>
+
+      <div *ngIf="uploadStatus === 1">
+        <div class="v-upload-spreadsheet__loader btn d-flex justify-content-center align-items-center border-0 rounded-4 bg-secondary bg-opacity-25">
+          <i class="v-upload-spreadsheet__loader-icon bi bi-arrow-clockwise pt-2"></i>
+        </div>
+      </div>
+ 
+      <div *ngIf="uploadStatus === 2">
+        <div class="v-upload-spreadsheet__diagnose-prediction fw-bold">{{ diagnosePrediction }}%</div>
+        
+        <a [routerLink]="['/']" class="btn btn-primary w-100 py-2 mt-4">
+          Return to the main page
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</section>
