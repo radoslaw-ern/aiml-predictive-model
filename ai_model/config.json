@@ -3,5 +3,5 @@
   "columns_to_drop": ["diagnosis"],
   "column_to_predict": "diagnosis",
   "test_size": 0.3,
-  "random_state": 123
+  "random_state": 77
 }

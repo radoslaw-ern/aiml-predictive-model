@@ -12,25 +12,25 @@ export class AppHeaderComponent {
 
   title = '';
 
-  ngOnInit(): void {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        const url = event.url;
-        switch (url) {
-          case '/home':
-            this.title = 'Home';
-            break;
-          case '/about':
-            this.title = 'About';
-            break;
-          case '/contact':
-            this.title = 'Contact';
-            break;
-          default:
-            this.title = 'Default Title';
-            break;
-        }
-      }
-    });
-  }
+  // ngOnInit(): void {
+  //   this.router.events.subscribe((event) => {
+  //     if (event instanceof NavigationEnd) {
+  //       const url = event.url;
+  //       switch (url) {
+  //         case '/home':
+  //           this.title = 'Home';
+  //           break;
+  //         case '/about':
+  //           this.title = 'About';
+  //           break;
+  //         case '/contact':
+  //           this.title = 'Contact';
+  //           break;
+  //         default:
+  //           this.title = 'Default Title';
+  //           break;
+  //       }
+  //     }
+  //   });
+  // }
 }
