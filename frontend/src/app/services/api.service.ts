@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class ApiService {
   constructor(private http: HttpClient) { }
 
-  private apiUrl = 'http://localhost:2881/api';
+  private apiUrl = 'http://localhost:1881/api';
 
   postFile(file: File): Observable<unknown> {
     const formData = new FormData();

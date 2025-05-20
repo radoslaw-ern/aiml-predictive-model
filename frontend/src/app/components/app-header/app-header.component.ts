@@ -10,9 +10,10 @@ import { RouterModule, Router } from '@angular/router';
 export class AppHeaderComponent {
   constructor(private router: Router) { }
 
-  title = '';
+  title = 'Upload .csv file';
 
   // ngOnInit(): void {
+  // }
   //   this.router.events.subscribe((event) => {
   //     if (event instanceof NavigationEnd) {
   //       const url = event.url;

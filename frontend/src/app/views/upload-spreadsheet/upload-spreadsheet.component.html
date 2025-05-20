@@ -1,6 +1,6 @@
 <section class="v-upload-spreadsheet">
-  <p *ngIf="uploadStatus !== 2" class="mb-4">Please select a .csv spreadsheet file from your device. Remember that columns must match the predefined schema. Use the "|" character as separator.</p>
-  <p *ngIf="uploadStatus === 2" class="mb-4">The probability of the cancer to be malignant is:</p>
+  <p *ngIf="uploadStatus !== 2" class="mb-5">Please select a .csv spreadsheet file from your device. Remember that columns must match the predefined schema. Use the "|" character as separator.</p>
+  <p *ngIf="uploadStatus === 2" class="mb-4">The probability of the cancer to be <b>non-cancerous</b> is:</p>
 
   <div class="d-flex justify-content-center">
     <div class="input-group input-group-lg w-auto">
@@ -21,7 +21,7 @@
       <div *ngIf="uploadStatus === 2">
         <div class="v-upload-spreadsheet__diagnose-prediction fw-bold">{{ diagnosePrediction }}%</div>
         
-        <a [routerLink]="['/']" class="btn btn-primary w-100 py-2 mt-4">
+        <a [routerLink]="['/']" class="btn btn-primary w-100 py-2 mt-5">
           Return to the main page
         </a>
       </div>

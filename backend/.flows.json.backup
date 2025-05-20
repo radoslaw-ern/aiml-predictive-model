@@ -39,9 +39,9 @@
         "id": "69ab2b9ca42efc74",
         "type": "comment",
         "z": "a72f8a7b8bf0d24b",
-        "name": "Receive uploaded spreadsheet",
+        "name": "Receive uploaded .csv file",
         "info": "",
-        "x": 170,
+        "x": 150,
         "y": 40,
         "wires": []
     },
