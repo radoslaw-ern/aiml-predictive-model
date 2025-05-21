@@ -14,10 +14,10 @@ model = keras.models.Sequential()
 model.add(keras.Input(shape = x_train.shape[1:]))
 model.add(keras.layers.Dense(units = 128, activation = "sigmoid"))
 model.add(keras.layers.Dense(units = 64, activation = "sigmoid"))
-model.add(keras.layers.Dense(units = 4, activation = "sigmoid"))
+model.add(keras.layers.Dense(units = 1, activation = "sigmoid"))
 
 model.compile(optimizer = "adam", loss = "binary_crossentropy", metrics = ["accuracy"])
 model.fit(x_train, y_train, epochs = 512)
 model.evaluate(x_test, y_test)
 
-model.save('model.keras')
+model.save("model.keras")
