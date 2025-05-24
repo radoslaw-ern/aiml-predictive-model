@@ -17,7 +17,7 @@
         "upload": true,
         "swaggerDoc": "",
         "x": 160,
-        "y": 80,
+        "y": 100,
         "wires": [
             [
                 "e80548c3f7b85f03"
@@ -32,7 +32,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1050,
-        "y": 120,
+        "y": 140,
         "wires": []
     },
     {
@@ -42,7 +42,7 @@
         "name": "Receive uploaded .csv file",
         "info": "",
         "x": 150,
-        "y": 40,
+        "y": 60,
         "wires": []
     },
     {
@@ -57,10 +57,11 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 480,
-        "y": 120,
+        "y": 140,
         "wires": [
             [
-                "a902e4cfabe56195"
+                "a902e4cfabe56195",
+                "aa3b36242edd5234"
             ]
         ]
     },
@@ -77,7 +78,7 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 80,
+        "y": 100,
         "wires": [
             [
                 "9c4ae10499f4cd29"
@@ -91,7 +92,7 @@
         "name": "Run model",
         "info": "",
         "x": 740,
-        "y": 40,
+        "y": 60,
         "wires": []
     },
     {
@@ -107,10 +108,11 @@
         "oldrc": false,
         "name": "",
         "x": 810,
-        "y": 100,
+        "y": 120,
         "wires": [
             [
-                "331e175952eeef1b"
+                "331e175952eeef1b",
+                "bedfee3e11299b2e"
             ],
             [],
             []
@@ -129,7 +131,7 @@
         "finalize": "",
         "libs": [],
         "x": 1060,
-        "y": 80,
+        "y": 100,
         "wires": [
             [
                 "a0fe27c5e86f5d41"
@@ -143,7 +145,7 @@
         "name": "Save .csv file on server",
         "info": "",
         "x": 440,
-        "y": 40,
+        "y": 60,
         "wires": []
     },
     {
@@ -153,7 +155,39 @@
         "name": "Send response",
         "info": "",
         "x": 1080,
-        "y": 40,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "bedfee3e11299b2e",
+        "type": "debug",
+        "z": "a72f8a7b8bf0d24b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "aa3b36242edd5234",
+        "type": "debug",
+        "z": "a72f8a7b8bf0d24b",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 340,
         "wires": []
     }
 ]
