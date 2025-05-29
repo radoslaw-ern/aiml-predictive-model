@@ -32,4 +32,8 @@ export class UploadSpreadsheetComponent {
       }
     });
   }
+
+  onRefresh = () => {
+    window.location.reload()
+  }
 }

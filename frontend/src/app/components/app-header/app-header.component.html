@@ -1,14 +1,9 @@
 <header class="c-app-header">
-  <div class="c-app-header__project-name d-flex align-items-center">
-    <h1 class="e-app-container">Predictive Model for Tumor Type Classification</h1> 
+  <div class="c-app-header__project-name d-flex justify-content-center align-items-center">
+    <h1 class="e-app-container">{{ title }}</h1> 
   </div>
 
   <div class="e-app-container">
-    <div class="d-flex align-items-center">
-      <a [routerLink]="['/']" class="c-app-header__back-button d-flex justify-content-center align-items-center">
-        <!-- <i class="bi bi-arrow-left"></i> -->
-      </a>
-      <h2 class="c-app-header__title text-center flex-grow-1">{{ title }}</h2>
-    </div>
+    <h2 class="c-app-header__title d-flex justify-content-center align-items-center">{{ subtitle }}</h2>
   </div>
 </header>

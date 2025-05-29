@@ -10,28 +10,6 @@ import { RouterModule, Router } from '@angular/router';
 export class AppHeaderComponent {
   constructor(private router: Router) { }
 
-  title = 'Upload .csv file';
-
-  // ngOnInit(): void {
-  // }
-  //   this.router.events.subscribe((event) => {
-  //     if (event instanceof NavigationEnd) {
-  //       const url = event.url;
-  //       switch (url) {
-  //         case '/home':
-  //           this.title = 'Home';
-  //           break;
-  //         case '/about':
-  //           this.title = 'About';
-  //           break;
-  //         case '/contact':
-  //           this.title = 'Contact';
-  //           break;
-  //         default:
-  //           this.title = 'Default Title';
-  //           break;
-  //       }
-  //     }
-  //   });
-  // }
+  title = 'Predictive Model for Tumor Type Classification';
+  subtitle = 'Diagnose prediction';
 }

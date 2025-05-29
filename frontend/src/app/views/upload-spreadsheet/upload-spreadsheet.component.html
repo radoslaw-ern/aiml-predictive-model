@@ -21,9 +21,9 @@
       <div *ngIf="uploadStatus === 2">
         <div class="v-upload-spreadsheet__diagnose-prediction fw-bold">{{ diagnosePrediction }}%</div>
         
-        <a [routerLink]="['/']" class="btn btn-primary w-100 py-2 mt-5">
-          Return to the main page
-        </a>
+        <button [routerLink]="['/']" (click)="onRefresh()" class="btn btn-primary w-100 py-2 mt-5">
+          Return
+        </button>
       </div>
 
     </div>
