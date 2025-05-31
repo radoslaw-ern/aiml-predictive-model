@@ -2,8 +2,10 @@
 
 ## Installation
 
-To install the Node-red, run the command below:
-```sudo npm i -g node-red```
+To install the Node-red, run the command below:\
+```sudo npm i -g node-red```\
+```cd backend```\
+```npm i```
 
 ## Running
 
