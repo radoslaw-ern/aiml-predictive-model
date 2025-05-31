@@ -31,8 +31,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 90,
-        "y": 480,
+        "x": 1050,
+        "y": 140,
         "wires": []
     },
     {
@@ -56,8 +56,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 180,
-        "y": 240,
+        "x": 480,
+        "y": 140,
         "wires": [
             [
                 "a902e4cfabe56195"
@@ -76,8 +76,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 100,
-        "y": 200,
+        "x": 400,
+        "y": 100,
         "wires": [
             [
                 "9c4ae10499f4cd29"
@@ -90,8 +90,8 @@
         "z": "a72f8a7b8bf0d24b",
         "name": "Run model",
         "info": "",
-        "x": 100,
-        "y": 300,
+        "x": 740,
+        "y": 60,
         "wires": []
     },
     {
@@ -106,12 +106,11 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 170,
-        "y": 340,
+        "x": 810,
+        "y": 100,
         "wires": [
             [
-                "331e175952eeef1b",
-                "256b0a24418214a0"
+                "331e175952eeef1b"
             ],
             [],
             []
@@ -129,8 +128,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 100,
-        "y": 440,
+        "x": 1060,
+        "y": 100,
         "wires": [
             [
                 "a0fe27c5e86f5d41"
@@ -143,8 +142,8 @@
         "z": "a72f8a7b8bf0d24b",
         "name": "Save .csv file on server",
         "info": "",
-        "x": 140,
-        "y": 160,
+        "x": 440,
+        "y": 60,
         "wires": []
     },
     {
@@ -153,25 +152,8 @@
         "z": "a72f8a7b8bf0d24b",
         "name": "Send response",
         "info": "",
-        "x": 120,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "256b0a24418214a0",
-        "type": "debug",
-        "z": "a72f8a7b8bf0d24b",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 570,
-        "y": 380,
+        "x": 1080,
+        "y": 60,
         "wires": []
     }
 ]
