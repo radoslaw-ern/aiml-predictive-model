@@ -31,8 +31,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1050,
-        "y": 140,
+        "x": 90,
+        "y": 480,
         "wires": []
     },
     {
@@ -56,12 +56,11 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 480,
-        "y": 140,
+        "x": 180,
+        "y": 240,
         "wires": [
             [
-                "a902e4cfabe56195",
-                "aa3b36242edd5234"
+                "a902e4cfabe56195"
             ]
         ]
     },
@@ -77,8 +76,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 100,
+        "x": 100,
+        "y": 200,
         "wires": [
             [
                 "9c4ae10499f4cd29"
@@ -91,8 +90,8 @@
         "z": "a72f8a7b8bf0d24b",
         "name": "Run model",
         "info": "",
-        "x": 740,
-        "y": 60,
+        "x": 100,
+        "y": 300,
         "wires": []
     },
     {
@@ -107,11 +106,12 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 810,
-        "y": 120,
+        "x": 170,
+        "y": 340,
         "wires": [
             [
-                "331e175952eeef1b"
+                "331e175952eeef1b",
+                "256b0a24418214a0"
             ],
             [],
             []
@@ -129,12 +129,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1060,
-        "y": 100,
+        "x": 100,
+        "y": 440,
         "wires": [
             [
-                "a0fe27c5e86f5d41",
-                "bedfee3e11299b2e"
+                "a0fe27c5e86f5d41"
             ]
         ]
     },
@@ -144,8 +143,8 @@
         "z": "a72f8a7b8bf0d24b",
         "name": "Save .csv file on server",
         "info": "",
-        "x": 440,
-        "y": 60,
+        "x": 140,
+        "y": 160,
         "wires": []
     },
     {
@@ -154,40 +153,25 @@
         "z": "a72f8a7b8bf0d24b",
         "name": "Send response",
         "info": "",
-        "x": 1080,
-        "y": 60,
+        "x": 120,
+        "y": 400,
         "wires": []
     },
     {
-        "id": "bedfee3e11299b2e",
+        "id": "256b0a24418214a0",
         "type": "debug",
         "z": "a72f8a7b8bf0d24b",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
-        "console": false,
+        "console": true,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "aa3b36242edd5234",
-        "type": "debug",
-        "z": "a72f8a7b8bf0d24b",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 340,
+        "x": 570,
+        "y": 380,
         "wires": []
     }
 ]

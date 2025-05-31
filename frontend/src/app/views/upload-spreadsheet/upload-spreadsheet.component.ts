@@ -23,11 +23,6 @@ export class UploadSpreadsheetComponent {
     this.apiService.postFile(file).subscribe((response: unknown) => {
       if ((response as apiResponse).prediction) {
         this.diagnosePrediction = Math.floor((response as apiResponse).prediction as number * 100000) / 1000
-        console.log({
-          r: (response as apiResponse).prediction,
-          d: this.diagnosePrediction,
-        });
-
         this.uploadStatus = 2;
       }
     });
