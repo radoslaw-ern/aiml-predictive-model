@@ -3,6 +3,6 @@
   "columns_to_drop": ["diagnosis"],
   "column_to_predict": "diagnosis",
   "test_size": 0.3,
-  "early_stop_patience": 32,
-  "random_state": 11
+  "early_stop_patience": 8,
+  "random_state": 113
 }
